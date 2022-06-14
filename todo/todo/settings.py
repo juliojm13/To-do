@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphene_django',
     'drf_yasg',
 
     'rest_framework',
@@ -165,3 +166,6 @@ REST_FRAMEWORK = {
 }
 
 
+GRAPHENE = {
+    "SCHEMA": "todo.schema.schema"
+}
