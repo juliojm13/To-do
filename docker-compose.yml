@@ -30,3 +30,9 @@ services:
       - 8000:80
     depends_on:
       - backend
+  fronted:
+    build: ./todo/frontend
+    ports:
+      - 80:80
+    depends_on:
+      - nginx
